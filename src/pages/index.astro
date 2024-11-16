@@ -1,5 +1,5 @@
 ---
-
+import Navigation from "../components/Navigation.astro";
 ---
 
 <html lang="en">
@@ -11,20 +11,46 @@
     <title>Astro</title>
   </head>
   <body>
-    <h1>Astro</h1>
-    <article class="prose lg:prose-xl">
-      <h1>Garlic bread with cheese: What the science tells us</h1>
+    <header>
+      <Navigation showName={false} />
+    </header>
+    <div class="my-6">
+      <h1>Chris Jarling</h1>
+      <p>Engineering Manager @ Gigs</p>
       <p>
-        For years parents have espoused the health benefits of eating garlic
-        bread with cheese to their children, with the food earning such an
-        iconic status in our culture that kids will often dress up as warm,
-        cheesy loaf for Halloween.
+        I'm an Engineering Manager, Fullstack Developer, and lifelong learner
+        with a strong technical background and a strategic mindset. <br />
+        I currently work at Gigs, building the Stripe for phone plans. <br />
+        I'm passionate about fostering team growth, creating great products, and
+        continually learning to stay at the forefront of technology and leadership
       </p>
+      <span class="block">📍 Copenhagen, Denmark</span>
+      <a href="/about">More about me</a>
+    </div>
+    <div class="my-6">
+      <h2>Favorite articles</h2>
+      <div><a href="/post">Post 1</a></div>
+      <div><a href="/post">Post 2</a></div>
+      <div><a href="/post">Post 3</a></div>
+      <div>Topics</div>
+      <div>
+        <a href="/posts">See all</a>
+      </div>
+    </div>
+
+    <div class="my-6">
+      <h2>Projects</h2>
       <p>
-        But a recent study shows that the celebrated appetizer may be linked to
-        a series of rabies cases springing up around the country.
+        None of these projects make me any money, I usually do side project for
+        fun, learning or both. I'm a proponent of <a href="/posts"
+          >silly side projects</a
+        >
       </p>
-      <!-- ... -->
-    </article>
+      <div>plsrOS</div>
+      <div>instadoma.in</div>
+      <div>rapidtasks</div>
+    </div>
+
+    <footer>c Chris jarling 2024</footer>
   </body>
 </html>

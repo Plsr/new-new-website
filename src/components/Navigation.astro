@@ -1,0 +1,24 @@
+---
+type Props = {
+  showName?: boolean;
+};
+
+const { showName = true } = Astro.props;
+---
+
+<div class="flex items-center justify-between px-4 py-2">
+  {
+    showName && (
+      <div class="self-start">
+        <h1>Chris Jarling</h1>
+        <p>Engineering Manager @ Gigs</p>
+      </div>
+    )
+  }
+  <div class="gap-4 flex ml-auto">
+    <a href="/">Home</a>
+    <a href="/">Writing</a>
+    <a href="/">About</a>
+    <a href="/">Now</a>
+  </div>
+</div>
